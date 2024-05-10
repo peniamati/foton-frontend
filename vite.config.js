@@ -1,8 +1,8 @@
+// https://vitejs.dev/config/
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -17,7 +17,7 @@ export default defineConfig({
     outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
-        main: './src/App.jsx' // Especifica la ruta de tu archivo principal aquí
+        main: './frontend/main.jsx' // Ajusta la ruta de acuerdo a tu estructura
       }
     },
   }
