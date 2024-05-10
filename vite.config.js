@@ -5,19 +5,20 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    port: 3000 // Especifica el puerto en el que deseas que se ejecute tu aplicación
+  },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src') // Si `App.js` está dentro de `src`
     }
   },
   build: {
-    outDir: 'dist',
-    emptyOutDir: true, // Añadido para limpiar el directorio de salida antes de construir
+    outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, './src/App.jsx') // Especifica la ruta absoluta del archivo principal
+        main: './src/App.jsx' // Especifica la ruta de tu archivo principal aquí
       }
     },
-    chunkSizeWarningLimit: 1500 // Ajuste opcional para el límite de advertencia de tamaño de fragmento
   }
 });
