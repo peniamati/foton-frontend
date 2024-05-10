@@ -14,7 +14,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: '../public', // Especifica el directorio de salida
+    outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
         main: './src/App.jsx' // Especifica la ruta de tu archivo principal aquí
