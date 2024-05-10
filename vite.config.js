@@ -8,16 +8,11 @@ export default defineConfig({
   server: {
     port: 3000 // Especifica el puerto en el que deseas que se ejecute tu aplicación
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src') // Si `App.js` está dentro de `src`
-    }
-  },
   build: {
     outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
-        main: './main.jsx' // Ruta del archivo principal en la raíz del proyecto
+        main: './src/main.jsx' // Ruta del archivo principal en la raíz del proyecto
       }
     },
   }
