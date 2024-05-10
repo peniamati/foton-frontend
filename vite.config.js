@@ -17,7 +17,7 @@ export default defineConfig({
     outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
-        main: './frontend/main.jsx' // Ajusta la ruta de acuerdo a tu estructura
+        main: './main.jsx' // Ajusta la ruta de acuerdo a tu estructura
       }
     },
   }
