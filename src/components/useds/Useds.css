@@ -1,0 +1,12 @@
+.row{
+  width: 100%;
+}
+.card-useds{
+  border-radius: 10px;
+  min-height: 350px;
+  margin-top: 10px;
+}
+.button-useds{
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
