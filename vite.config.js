@@ -17,7 +17,7 @@ export default defineConfig({
     outDir: 'dist', // Cambia el directorio de salida a "dist"
     rollupOptions: {
       input: {
-        main: './main.jsx' // Ajusta la ruta de acuerdo a tu estructura
+        main: './main.jsx' // Ruta del archivo principal en la raíz del proyecto
       }
     },
   }
